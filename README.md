@@ -1,4 +1,4 @@
-# Allure Example
+# Allure Example Readme
 
 > Example of Allure Report usage with TestNG, Java and Gradle
 
