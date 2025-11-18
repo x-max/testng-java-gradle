@@ -22,7 +22,7 @@ jobs:
         with:
           java-version: 21
           cache: 'gradle'
-          distribution: 'zulu'
+          distribution: 'temurin'
 
       - name: Run Test
         run: ./gradlew test
@@ -52,3 +52,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-history
+          force_orphan: true
+          allow_empty_commit: true
