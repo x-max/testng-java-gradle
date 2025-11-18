@@ -6,6 +6,9 @@ on:
     branches-ignore:
       - '!main'
 
+permissions:
+  contents: write
+
 jobs:
   autotests:
     name: Run tests and generate Allure Report
@@ -34,10 +37,12 @@ jobs:
           path: gh-pages
 
       - name: Generate Allure Report
-        uses: simple-elf/allure-report-action@v1.11
+        uses: simple-elf/allure-report-action@v1.13
         if: always()
         with:
           allure_results: build/allure-results
+          gh_pages: gh-pages
+          allure_report: allure-report
           allure_history: allure-history
 
       - name: Publish Allure Report
