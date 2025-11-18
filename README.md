@@ -12,4 +12,4 @@
 
 ---
 
-The generated report is available here: [https://allure-examples.github.io/testng-java-gradle](https://allure-examples.github.io/testng-java-gradle/)
+The generated report is available here: [https://x-max.github.io/testng-java-gradle](https://x-max.github.io/testng-java-gradle/)
